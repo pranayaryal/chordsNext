@@ -1,5 +1,6 @@
-import Link from 'next/link'
 import React, { useState } from 'react'
+//import { NavLink } from 'react-router-dom';
+import Link from 'next/link'
 import data from '../data';
 
 
@@ -25,9 +26,8 @@ const Navbar = props => {
       </div>
 
       {/* <div className={isOpen ? 'block text-white px-2 pt-2 pb-4 sm:block': 'hidden sm:block sm:text-white sm:px-2 sm:pt-2 sm:pb-4'}> */}
-      {/* <div onClick={() => setIsOpen(false)} className={`text-white text-center px-2 pt-2 pb-4 lg:hidden  ${isOpen ? 'block' : 'hidden'}`}> */}
-      <div  className={`text-white text-center px-2 pt-2 pb-4 lg:hidden  ${isOpen ? 'block' : 'hidden'}`}>
-        {chords.map(chord =>
+      <div onClick={() => setIsOpen(false)} className={`text-white text-center px-2 pt-2 pb-4 lg:hidden  ${isOpen ? 'block' : 'hidden'}`}>
+        {chords.map(chord => 
           <Link href={`/${chord}`} key={chord}>
             <a className="mt-2 block px-2 py-1 rounded text-menu-color hover:bg-gray-800">{chord}</a>
           </Link>
@@ -40,4 +40,3 @@ const Navbar = props => {
 };
 
 export default Navbar;
-

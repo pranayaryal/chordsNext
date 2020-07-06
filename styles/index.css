@@ -9,6 +9,10 @@
   @apply py-20;
 }
 
+body {
+  @apply bg-back-black;
+}
+
 .title {
   @apply text-5xl text-center;
   color: #333;

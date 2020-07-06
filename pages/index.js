@@ -1,12 +1,16 @@
 import Nav from '../components/nav'
+import MenuAndDetails from '../components/MenuAndDetails';
+import { getChordData } from '../lib/chords';
+import Menu from '../components/Menu';
+
 
 export default function IndexPage() {
+
+  const defaultData = getChordData('A');
   return (
-    <div>
+    <div className="bg-back-black">
       <Nav />
-      <div className="hero">
-        <h1 className="title">Next.js + Tailwind CSS</h1>
-      </div>
+      <MenuAndDetails details={defaultData} />
     </div>
   )
 }
