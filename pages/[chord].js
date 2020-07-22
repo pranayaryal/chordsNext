@@ -3,16 +3,17 @@ import Chord from '../components/Chord';
 import Menu from '../components/Menu';
 import Nav from '../components/nav'
 import MenuAndDetails from '../components/MenuAndDetails';
+import Layout from '../components/layout';
 
 
 export default function Post({ details }) {
   console.log(details);
 
   return (
-    <div>
+    <Layout>
       <Nav />
       <MenuAndDetails details={details} />
-    </div>
+    </Layout>
   )
 }
 
