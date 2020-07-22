@@ -3,6 +3,7 @@ import MenuAndDetails from '../components/MenuAndDetails';
 import { getChordData } from '../lib/chords';
 import Menu from '../components/Menu';
 import ReactGA from 'react-ga'
+import Layout from '../components/layout';
 
 
 export default function IndexPage() {
@@ -10,9 +11,11 @@ export default function IndexPage() {
 
   const defaultData = getChordData('A');
   return (
-    <div className="bg-back-black">
-      <Nav />
-      <MenuAndDetails details={defaultData} />
-    </div>
+    <Layout>
+      <div className="bg-back-black">
+        <Nav />
+        <MenuAndDetails details={defaultData} />
+      </div>
+    </Layout>
   )
 }
