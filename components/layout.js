@@ -7,6 +7,7 @@ const Layout = ({children}) => {
     <Head>
       <title>Ukulele Chords - Pranay Aryal</title>
       <script async defer data-domain="uku-chords.netlify.app" src="https://plausible.io/js/plausible.js"></script>
+      { children }
     </Head>
 
   );
