@@ -8,6 +8,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "jshint": "^2.12.0",
     "jslint": "^0.12.1",
     "next": "^9.2.0",
     "react": "^16.12.0",
