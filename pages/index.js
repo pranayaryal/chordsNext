@@ -1,8 +1,4 @@
-import Nav from '../components/nav'
-import MenuAndDetails from '../components/MenuAndDetails';
 import { getChordData } from '../lib/chords';
-import Menu from '../components/Menu';
-import ReactGA from 'react-ga'
 import Layout from '../components/layout';
 import Chord from '../components/Chord';
 
